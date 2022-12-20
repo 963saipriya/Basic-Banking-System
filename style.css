@@ -1,0 +1,123 @@
+{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: montserrat;
+}
+nav{
+	background:skyblue;
+	height: 80px;
+	width: 100%;
+}
+label.logo{
+	color: orangered;
+	font-size: 35px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a.hover{
+	background: orangered;
+}
+.checkbtn{
+	font-size: 30px;
+	color: red;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+#check{
+	display: none;
+}
+@media(max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media(max-width: 952px){
+	 .checkbtn{
+	 	display: block;
+	 }
+	 ul{
+	 	position: fixed;
+	 	width: 100%;
+	 	height: 100vh;
+	 	background: red;
+	 	top: 80px;
+	 	left: -100%;
+	 	text-align: center;
+	 	transition: all .5s;
+	 }
+	 nav ul li{
+	 	display: block;
+	 	margin: 50px 0;
+	 	line-height: 30px;
+	 }
+	 nav ul li a{
+	 	font-size: 20px;
+	 }
+ a:hover,a.active{
+ 	background: none;
+ 	color: #0082e6;
+ }
+ #check:checked ~ ul{
+ 	left: 0;
+ }
+}
+section{
+	background: url(bank.jpg) no-repeat;
+	background-size:cover;
+	height:calc(160vh - 80px);
+}
+footer{
+    background-color:  #f2e9e4;
+}
+
+.social-icons li{
+    list-style: none;
+    display: inline;
+    padding: 0.5rem;
+}
+
+.github{
+    color: #24292e;
+}
+
+.linkedin{
+    color: #0077b5;
+}
+
+.google{
+    color: #D44638;
+}
+footer
+{
+	text-align: center;
+}
+/* footer css ends here  */
